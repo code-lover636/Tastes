@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Tastes| Find Any Recipe{% endblock %}
+
+{% block content %}
+    <section class="find">
+
+        <form class="searchbar"  action="/recipe" method="POST">
+            <input type="text" name="search" placeholder="Search for a recipe...">
+            <button type="submit">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_17_83)">
+                    <path d="M11.0081 9.69747C11.9159 8.45874 12.3225 6.92293 12.1465 5.3973C11.9706 3.87167 11.2251 2.46873 10.0591 1.46916C8.89322 0.469586 7.39288 -0.0528995 5.85827 0.00623156C4.32367 0.0653626 2.86797 0.701749 1.78243 1.78807C0.696879 2.8744 0.0615346 4.33054 0.00350163 5.86519C-0.0545313 7.39984 0.469027 8.89981 1.46943 10.065C2.46984 11.2302 3.87331 11.9747 5.39907 12.1496C6.92482 12.3244 8.46034 11.9168 9.69842 11.0081H9.69749C9.72561 11.0456 9.75561 11.0812 9.78936 11.1159L13.3987 14.7253C13.5745 14.9012 13.813 15.0001 14.0617 15.0002C14.3104 15.0002 14.5489 14.9015 14.7248 14.7258C14.9007 14.55 14.9996 14.3115 14.9997 14.0628C14.9998 13.8141 14.9011 13.5756 14.7253 13.3997L11.1159 9.79029C11.0824 9.75636 11.0464 9.72502 11.0081 9.69654V9.69747ZM11.25 6.09372C11.25 6.77085 11.1166 7.44135 10.8575 8.06693C10.5984 8.69252 10.2186 9.26094 9.73976 9.73974C9.26095 10.2185 8.69253 10.5984 8.06695 10.8575C7.44136 11.1166 6.77087 11.25 6.09374 11.25C5.41661 11.25 4.74611 11.1166 4.12053 10.8575C3.49494 10.5984 2.92652 10.2185 2.44772 9.73974C1.96892 9.26094 1.58911 8.69252 1.32998 8.06693C1.07086 7.44135 0.937487 6.77085 0.937487 6.09372C0.937487 4.7262 1.48073 3.41469 2.44772 2.4477C3.4147 1.48072 4.72621 0.937472 6.09374 0.937472C7.46126 0.937472 8.77277 1.48072 9.73976 2.4477C10.7067 3.41469 11.25 4.7262 11.25 6.09372Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_17_83">
+                    <rect width="15" height="15" rx="5" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>     
+            </button>
+        </form>
+
+        <form class="display" method="GET" action="/recipe">
+            <button type="text" class="card" name="card" value="chicken nuggets">
+                <img src="https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <h1>Chicken Nuggets</h1>
+            </button>
+
+            <button type="submit" class="card" name="card" value="burger">
+                <img src="https://images.pexels.com/photos/3738730/pexels-photo-3738730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <h1>Burger</h1>
+            </button>
+
+            <button type="submit" class="card" name="card" value="steak">
+                <img src="https://images.pexels.com/photos/1352262/pexels-photo-1352262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <h1>Steak</h1>
+            </button>
+
+            <button type="submit" class="card" name="card" value="cheese pizza">
+                <img src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?cs=srgb&dl=pexels-muffin-creatives-1653877.jpg&fm=jpg">
+                <h1>Cheese Pizza</h1>
+            </button>
+        </form>
+
+
+    </section>
+{% endblock %}

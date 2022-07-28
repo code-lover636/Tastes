@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #172A3A;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #172A3A;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 55vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.705);
+  -webkit-box-shadow: 0px 8px 8px rgba(12, 12, 12, 0.555);
+          box-shadow: 0px 8px 8px rgba(12, 12, 12, 0.555);
+  z-index: 5;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+nav:hover {
+  -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+nav .close {
+  float: right;
+  width: 40px;
+  height: auto;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style-type: none;
+  padding: 6em 1em;
+}
+
+nav ul a {
+  color: #75DDDD;
+  font-family: 'Arima Madurai';
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 3.5em;
+  font-size: 1.5rem;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.logo {
+  position: absolute;
+  left: .5em;
+  top: .5em;
+  font-family: 'Cookie';
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 55px;
+  color: #09BC8A;
+}
+
+.menu {
+  position: absolute;
+  width: 30px;
+  height: 17px;
+  right: 2em;
+  top: 2.5em;
+  cursor: pointer;
+}
+
+.menu:hover {
+  width: 32px;
+  height: auto;
+}
+
+.hero {
+  overflow: hidden;
+}
+
+.header {
+  left: 3em;
+  top: 7em;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.header .heading {
+  font-family: 'Arima Madurai';
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 57px;
+  color: #75DDDD;
+}
+
+.header .subheading {
+  left: 1.5em;
+  font-family: 'Arima Madurai';
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #508991;
+}
+
+.preview {
+  width: auto;
+  height: 350;
+  padding-top: 7em;
+  padding-bottom: 3em;
+}
+
+.get {
+  width: 150px;
+  height: 30px;
+  font-family: 'Arima Madurai';
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 21px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #09BC8A;
+  border-radius: 0.6em;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  -webkit-box-shadow: 0 0 40px 40px #09BC8A inset, 0 0 0 0 #09BC8A;
+          box-shadow: 0 0 40px 40px #09BC8A inset, 0 0 0 0 #09BC8A;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.get:hover {
+  -webkit-box-shadow: 0 0 5px 0 #09BC8A inset, 0 0 5px 2px #09BC8A;
+          box-shadow: 0 0 5px 0 #09BC8A inset, 0 0 5px 2px #09BC8A;
+}
+
+.about .description {
+  position: absolute;
+  top: 15%;
+  z-index: 1;
+}
+
+.about .description p {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  text-align: center;
+  font-family: 'Arima Madurai';
+  font-size: 1rem;
+  color: white;
+}
+
+.about .description h1 {
+  float: right;
+  z-index: -5;
+  -webkit-transform: translateY(-1em);
+          transform: translateY(-1em);
+  font-family: 'Arima Madurai';
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 163px;
+  color: rgba(80, 137, 145, 0.16);
+}
+
+.about .image {
+  position: fixed;
+  margin-bottom: 0;
+}
+
+.about .image .green {
+  position: fixed;
+  width: 125px;
+  height: 300px;
+  right: 0;
+  bottom: 0;
+  background: #09BC8A;
+}
+
+.about .image .blue {
+  position: fixed;
+  width: 243px;
+  height: 157px;
+  right: 0;
+  bottom: 0;
+  background: #508991;
+}
+
+.about .image .design {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  right: 70px;
+  bottom: 134px;
+}
+
+.about .image .photo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 250px;
+  width: auto;
+}
+
+.find {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.find .searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 7em;
+}
+
+.find .searchbar input {
+  width: 240px;
+  height: 30px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Arima Madurai';
+  font-weight: 800;
+  padding-left: 1em;
+  outline: none;
+}
+
+.find .searchbar input:focus {
+  color: #09BC8A;
+}
+
+.find .searchbar button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #09BC8A;
+  border-radius: 0.6em;
+  color: #09BC8A;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 1em;
+  background-image: linear-gradient(45deg, #09BC8A 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.find .searchbar button:hover {
+  background-position: 0;
+}
+
+.find .display {
+  position: absolute;
+  top: 11em;
+  padding-bottom: 3em;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(255, 255, 0, 0);
+}
+
+.find .display .card {
+  margin-top: 2em;
+  width: 190px;
+  height: 210px;
+  background-color: white;
+  overflow: hidden;
+  border: none;
+}
+
+.find .display .card img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+
+.find .display .card h1 {
+  font-family: 'Arima Madurai';
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #004346;
+  text-align: center;
+}
+
+.recipe {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.recipe img {
+  height: 130px;
+  width: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  border: none;
+  margin-left: 1.5em;
+  -webkit-transform: translate(-25%, -13em);
+          transform: translate(-25%, -13em);
+  float: left;
+}
+
+.recipe h1 {
+  float: right;
+  -webkit-transform: translateY(-8em);
+          transform: translateY(-8em);
+  font-family: 'Arima Madurai';
+  padding-right: 2em;
+  font-weight: 800;
+  font-size: auto;
+  color: #75DDDD;
+}
+
+.recipe p {
+  float: down;
+  position: absolute;
+  top: 17em;
+  font-family: 'Arima Madurai';
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 5em;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+
+@media only screen and (min-width: 900px) {
+  .menu {
+    display: none;
+  }
+  nav {
+    position: absolute;
+    width: 40vw;
+    height: 2em;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    background: none;
+    display: block;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    z-index: 2;
+    margin-top: 5em;
+    margin-right: 3em;
+  }
+  nav:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  nav .close {
+    display: none;
+  }
+  nav ul {
+    padding: 10px 10px 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav ul a {
+    line-height: 0;
+    font-size: 1.3rem;
+    color: #75DDDD;
+    padding-left: 10px;
+  }
+  nav ul a:hover {
+    color: #09BC8A;
+  }
+  .logo {
+    top: 1.5em;
+    left: 2em;
+  }
+  .preview {
+    height: 600px;
+    position: absolute;
+    right: 10em;
+  }
+  .header {
+    left: 10em;
+    top: 15em;
+  }
+  .header .heading {
+    font-size: 4rem;
+  }
+  .header .subheading {
+    padding-top: 1em;
+    font-size: 1.5rem;
+  }
+  .get {
+    position: absolute;
+    left: 10em;
+    bottom: 10em;
+  }
+  .about .description p {
+    width: 70%;
+    padding-left: 6em;
+    padding-top: 6em;
+    text-align: left;
+    line-height: 1.8em;
+    font-size: 1.1rem;
+  }
+  .about .description h1 {
+    float: left;
+    padding-left: 2em;
+    padding-top: 5px;
+  }
+  .about .image .green {
+    width: 200px;
+    height: 65%;
+  }
+  .about .image .blue {
+    width: 30%;
+    height: 200px;
+  }
+  .about .image .design {
+    right: 150px;
+    bottom: 150px;
+  }
+  .about .image .photo {
+    height: 350px;
+  }
+  .find .searchbar {
+    top: 10em;
+  }
+  .find .searchbar input {
+    width: 600px;
+    height: 35px;
+  }
+  .find .searchbar button {
+    width: 35px;
+    height: 35px;
+  }
+  .find .display {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    bottom: 8em;
+    top: auto;
+    padding-bottom: 0;
+    height: 210px;
+    padding-right: 3em;
+  }
+  .find .display .card {
+    margin-top: 0;
+    margin-left: 3em;
+  }
+  .find .display .card:hover {
+    -webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+  .recipe img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 10em;
+    top: 25em;
+  }
+  .recipe h1 {
+    position: absolute;
+    left: 12em;
+    top: 13em;
+    font-size: 2.5rem;
+    height: 100px;
+  }
+  .recipe p {
+    position: absolute;
+    padding-top: 2em;
+    left: 25em;
+    width: 60%;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

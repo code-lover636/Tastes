@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Tastes| Random Recipe{% endblock %}
+
+{% block content %}
+    <section class="recipe">
+        <img src={{details["image"]}} alt="dish image">
+        <h1>{{details["title"]}}</h1>
+        <p> 
+            {{details["instructions"]}}
+        </p>
+
+    </section>
+{% endblock %}
