@@ -1,1 +1,1 @@
-web: gunicorn app:tastes 
+web: gunicorn tastes:app
